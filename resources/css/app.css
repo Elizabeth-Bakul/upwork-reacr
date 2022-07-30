@@ -1,0 +1,192 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(/fonts/Ubuntu-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(/fonts/Ubuntu-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(/fonts/Ubuntu-Light.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(/fonts/Ubuntu-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(/fonts/Ubuntu-LightItalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+* {
+    font-family: "Ubuntu";
+    font-weight: 300;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 120px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sectionContainer {
+    margin: 0 0 40px 0;
+    overflow: hidden;
+}
+
+.title {
+    margin: 0 0 50px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #2bb739;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    background-color: #2bb739;
+    color: #fff;
+    border: 4px dashed #2b2b2b;
+    border-radius: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.loginContainer {
+    min-height: 80vh;
+}
+
+.auth-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 6px 17px;
+}
+
+.portfolio {
+    padding-bottom: 100px;
+}
+
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #2bb739;
+}
+
+[type="text"]:focus:read-only,
+[type="email"]:focus:read-only,
+[type="url"]:focus:read-only,
+[type="password"]:focus:read-only,
+[type="number"]:focus:read-only,
+[type="date"]:focus:read-only,
+[type="datetime-local"]:focus:read-only,
+[type="month"]:focus:read-only,
+[type="search"]:focus:read-only,
+[type="tel"]:focus:read-only,
+[type="time"]:focus:read-only,
+[type="week"]:focus:read-only,
+[type="checkbox"]:focus:read-only,
+[type="radio"]:focus:read-only,
+[multiple]:focus:read-only,
+textarea:focus:read-only,
+select:focus:read-only {
+    border-color: transparent;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:checked:hover {
+    background-color: #2bb739;
+}
+[type="radio"]:focus,
+[type="radio"]:hover {
+    background-color: #fff;
+}
+[type="radio"]:checked:hover,
+[type="radio"]:checked:focus {
+    border-color: #2bb739;
+    background-color: #fff;
+}
+[type="radio"]:checked {
+    border-color: #2bb739;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='black' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 80px;
+    }
+    .title {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+    .sectionContainer {
+        margin-bottom: 26px;
+    }
+    .title {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        padding: 0 10px;
+    }
+}
