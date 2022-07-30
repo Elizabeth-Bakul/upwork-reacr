@@ -1,0 +1,102 @@
+.container {
+    flex-direction: row;
+}
+
+.proposalContainer {
+    margin-right: 43px;
+    width: 90%;
+    max-width: 362px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.buttonBack {
+    padding: 6px 16px;
+    margin-bottom: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(0, 0, 0, 0) 100%
+        ),
+        #2bb739;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.proposalBtn {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    max-width: 160px;
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(0, 0, 0, 0) 100%
+        ),
+        #2bb739;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.proposalItem {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    width: 100%;
+}
+.proposalItem + .proposalItem {
+    margin-top: 13px;
+}
+
+.proposalItemText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.proposalLink {
+    font-size: 19px;
+    border-bottom: 2px dashed #2bb739;
+}
+
+.proposalBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 23px;
+}
+
+.cardContainer {
+    width: 90%;
+    max-width: 362px;
+}
+
+.btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .proposalContainer {
+        margin: 0 0 25px 0;
+    }
+}

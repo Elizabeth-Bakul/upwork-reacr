@@ -1,0 +1,238 @@
+.formWrapper {
+    position: relative;
+    padding-bottom: 100px;
+    width: 60%;
+    z-index: 1;
+    background: transparent;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -2px 5px -5px rgba(0, 0, 0, 0.25),
+        -7px 2px 9px -5px rgba(0, 0, 0, 0.25),
+        -2px 0px 7px -5px rgba(0, 0, 0, 0.25),
+        0px -5px 1px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.formWrapper::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -17%;
+    width: 65%;
+    height: 100%;
+    background-image: url(/images/bgrEllipse.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0 0 35px 0;
+}
+
+.searchJob {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.searchInput {
+    display: block;
+}
+
+.inputList {
+    max-height: 300px;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    z-index: 2;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(43, 183, 57) transparent;
+}
+.inputList::-webkit-scrollbar {
+    width: 5px;
+}
+.inputList::-webkit-scrollbar-track {
+    background: transparent;
+}
+.inputList::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 183, 57);
+    border-radius: 25px;
+}
+
+.inputList > div {
+    padding: 1%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+    border-radius: 8px;
+}
+
+.inputList > div:hover {
+    background-color: #2bb739;
+    cursor: pointer;
+    color: #fff;
+}
+
+.formInput,
+.searchInput {
+    width: 100%;
+    background-color: #fff;
+    border: 1px dashed #2bb739;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    resize: none;
+    margin: 0 0 9px 0;
+}
+
+.formInput::placeholder,
+.searchInput::placeholder {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+}
+
+.info {
+    display: flex;
+    margin: 0 0 27px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+}
+
+.price {
+    display: flex;
+    max-width: 150px;
+    margin-right: 10%;
+}
+
+.label {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.inputInfo {
+    margin: 0 10px;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #2bb739;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+}
+
+.period {
+    margin: 0;
+}
+
+.fileBlock {
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.fileContainer {
+    margin: 0 10px 0 0;
+    padding: 3px 10px;
+    position: relative;
+    width: 245px;
+    background: linear-gradient(
+            270.76deg,
+            rgba(0, 0, 0, 0) 3.23%,
+            rgba(255, 255, 255, 0.2) 97.53%
+        ),
+        #2bb739;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.fileContainer:hover {
+    box-shadow: 8px 8px 20px rgb(0 0 0 / 50%);
+}
+
+.fileInput {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    opacity: 0;
+}
+
+.fileText {
+    font-weight: 400;
+}
+
+.fileName {
+    color: #2b2b2b;
+    font-weight: 150;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.btnSubmit {
+    align-self: flex-end;
+}
+@media (max-width: 1024px) {
+    .formWrapper {
+        width: 100%;
+    }
+    .formWrapper::after {
+        width: 65%;
+    }
+    .fileText {
+        font-size: 13px;
+    }
+    .fileBlock {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .formWrapper::after {
+        display: none;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .price {
+        margin-right: 0;
+    }
+    .period {
+        margin-top: 5px;
+    }
+    .fileName {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}

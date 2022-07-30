@@ -1,0 +1,88 @@
+.btnMenu {
+    padding: 14px 36px;
+    background-image: url("/images/borderButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2bb739;
+    width: 140px;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    right: 120px;
+    padding: 10px 25px;
+    background: #ffffff;
+    box-shadow: inset 3px 3px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    cursor: pointer;
+}
+.item + .item {
+    margin: 7px 0 0 0;
+}
+.auth {
+    padding: 14px 36px;
+    background-image: url("/images/borderButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2bb739;
+    width: 140px;
+    text-align: center;
+    cursor: pointer;
+}
+.auth:hover {
+    background-color: transparent;
+}
+.menuWrapper {
+    grid-column: 4/5;
+}
+@media (max-width: 1200px) {
+    .btnMenu,
+    .auth {
+        width: 120px;
+        padding: 10px 30px;
+    }
+}
+@media (max-width: 1024px) {
+    .btnMenu,
+    .auth {
+        width: 100px;
+        padding: 8px 20px;
+        line-height: 18px;
+        font-size: 16px;
+        background-size: 100%;
+    }
+
+    .menu {
+        right: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        right: 60px;
+    }
+}
+@media (max-width: 576px) {
+    .menu {
+        right: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .menu {
+        right: 10px;
+    }
+}

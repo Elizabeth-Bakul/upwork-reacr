@@ -1,0 +1,144 @@
+.formPage {
+    position: relative;
+    background: transparent;
+    box-shadow: 0 -2px 5px -5px rgba(0, 0, 0, 0.25),
+        -7px 2px 9px -5px rgba(0, 0, 0, 0.25),
+        -2px 0px 7px -5px rgba(0, 0, 0, 0.25),
+        0px -5px 1px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 44px 37px 30px 21px;
+    width: 100%;
+    max-width: 600px;
+}
+.formPage::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 705px;
+    height: 103%;
+    top: -4px;
+    right: -441px;
+    background-image: url("/images/bg-ellipse.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.loginFormRadio {
+    margin: 0 0 9px 0;
+    display: flex;
+    align-items: center;
+}
+
+.radioContainer {
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+.radioContainer + .radioContainer {
+    margin: 0 0 0 50px;
+}
+
+.registerRadio {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    border: 1px solid #2bb739;
+}
+.registerRadio:checked {
+    background-color: #fff;
+}
+
+.radioLabel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+}
+
+.loginInput {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 1px dashed #2bb739;
+    padding: 8px 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+    z-index: 5;
+}
+.loginInput::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+}
+
+.loginFormItem {
+    margin-top: 9px;
+}
+
+.formLink {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #838383;
+    border-bottom: 1px dashed #2bb739;
+}
+
+.formBtn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(
+            335.22deg,
+            rgba(0, 0, 0, 0.2) 15.83%,
+            rgba(255, 255, 255, 0.162) 79.46%
+        ),
+        #2bb739;
+    border-radius: 40px;
+    padding: 10px 35px;
+    z-index: 5;
+}
+
+.loginFormCont {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .formPage {
+        box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+    }
+    .formPage::after {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .loginFormRadio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .registerRadio + .registerRadio {
+        margin-top: 10px;
+    }
+
+    .loginFormCont {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .formLink {
+        align-self: start;
+        margin: 0 0 10px 0;
+    }
+}

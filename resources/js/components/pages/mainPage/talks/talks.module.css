@@ -1,0 +1,24 @@
+.title {
+    padding: 36px 0 0 0;
+    margin-bottom: 50px;
+}
+
+.cardsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.card::after {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .cardsList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 800px) {
+    .cardsList {
+        grid-template-columns: 1fr;
+    }
+}

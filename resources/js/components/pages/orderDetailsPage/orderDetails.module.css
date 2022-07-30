@@ -1,0 +1,93 @@
+.container {
+    flex-direction: row;
+}
+
+.proposalContainer {
+    margin: 0 55px 0 0;
+    width: 90%;
+    max-width: 362px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.buttonBack {
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(0, 0, 0, 0) 100%
+        ),
+        #2bb739;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    padding: 6px 16px;
+}
+
+.buttonBackImg {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.respondedOrder {
+    margin-top: 15px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    color: #2b2b2b;
+    border-radius: 8px;
+}
+
+.formProposal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.loginInput {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 1px dashed #2bb739;
+    padding: 8px 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+.loginInput::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2b2b2b;
+}
+
+.cardContainer {
+    width: 90%;
+    max-width: 362px;
+}
+
+.btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .proposalContainer {
+        margin: 0 0 25px 0;
+    }
+}
